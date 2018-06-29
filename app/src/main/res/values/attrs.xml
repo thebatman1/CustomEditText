@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomEditText">
+        <attr name="label" format="string"/>
+        <attr name="helpText" format="string" />
+        <attr name="messageText" format="string" />
+        <attr name="displayInfoButton" format="boolean" />
+        <attr name="required" format="boolean" />
+        <attr name="maxWords" format="integer" />
+        <attr name="inputType">
+            <enum name="text" value="0" />
+            <enum name="number" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>
