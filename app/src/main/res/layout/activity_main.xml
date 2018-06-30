@@ -12,16 +12,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:helpText="Enter the title for your Listing"
-        app:label="Title"
+        app:label="@string/title"
         app:inputType="text"/>
 
     <com.lambda.customedittextexample.CustomEditText
         android:id="@+id/sv_subtitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:label="Subtitle"
+        app:label="@string/subtitle"
         app:displayInfoButton="false"
         app:helpText="Enter the subtitle for your Listing"
-        app:inputType="number"/>
+        app:inputType="number"
+        app:messageText="The number should be between 0-100"/>
 
 </LinearLayout>

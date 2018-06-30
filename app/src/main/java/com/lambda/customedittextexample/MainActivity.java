@@ -22,14 +22,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+
+        svSubtitle.setEditTextFilters(new CustomRangeInputFilter(0.0, 100.0));
     }
 
-    public void showPopup(View view) {
-        switch (view.getId()) {
-            case R.id.sv_title:
-                buildAlertDialog();
-                break;
-        }
+    public void showPopup() {
+        buildAlertDialog();
     }
 
     private void buildAlertDialog() {
